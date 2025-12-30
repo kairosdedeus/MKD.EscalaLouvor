@@ -91,9 +91,12 @@ ul {
 li {
     margin-bottom: 6px;
 }
-
+header a {
+    color: #fff;
+    text-decoration: none;
+}
 /* Links */
-a {
+li a{
     display: block;
     text-align: center;
     padding: 12px;
