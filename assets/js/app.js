@@ -10,17 +10,8 @@ function carregarPagina(pagina) {
       document.getElementById("content").innerHTML = html;
       window.scrollTo(0, 0);
       window.location.hash = pagina;
-    })
-    .catch(() => {
-      document.getElementById("content").innerHTML = `
-        <div class="card">
-          <h2>⚠ Página não encontrada</h2>
-          <button onclick="carregarPagina('home')">⬅ Voltar</button>
-        </div>
-      `;
-    });
+    })    
 }
-
 // carregar página via URL
 function carregarViaHash() {
   const pagina = window.location.hash.replace("#", "");
@@ -37,5 +28,3 @@ carregarViaHash();
 // ao mudar o hash (navegação do navegador)
 window.addEventListener("hashchange", carregarViaHash);
 
-// página inicial
-carregarPagina("home");
