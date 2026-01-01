@@ -1,42 +1,24 @@
-  <div class="card">
-    <h2>Equipes</h2>
-    <ul>  
-        <li><a href="#a1" onclick="carregarPagina('equipes/a1')">Equipe A-1</a></li>
-        <li><a href="#a2" onclick="carregarPagina('equipes/a2')">Equipe A-2</a></li>
-        <li><a href="#b1" onclick="carregarPagina('equipes/b1')">Equipe B-1</a></li>
-        <li><a href="#b2" onclick="carregarPagina('equipes/b2')">Equipe B-2</a></li>
-        <li><a href="#c1" onclick="carregarPagina('equipes/c1')">Equipe C-1</a></li>
-        <li><a href="#c2" onclick="carregarPagina('equipes/c2')">Equipe C-2</a></li>
-        <li><a href="#x" onclick="carregarPagina('equipes/x')">Equipe X</a></li> 
-      </ul>
-     </div>
+<div class="card">
+  <h2>Equipes</h2>
+  <ul id="lista-equipes">
+    <li>Carregando equipes...</li>
+  </ul>
+</div>
 
-  <div class="card">
-    <h2>📋 Cantores e Equipes</h2>
+<div class="card">
+  <h2>📋 Cantores e Equipes</h2>
 
-    <div style="overflow-x:auto;">
-      <table style="width:100%; border-collapse: collapse; font-size: 15px;">
-        <thead>
-          <tr style="background:#f2f2f2;">
-            <th style="padding:8px; border:1px solid #ddd; text-align:left;">Nome</th>
-            <th style="padding:8px; border:1px solid #ddd; text-align:left;">Equipe</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr><td>Michael</td><td>X</td></tr>
-          <tr><td>Vinicius</td><td>X</td></tr>
-          <tr><td>Pr. Tchucky</td><td>A</td></tr>
-          <tr><td>Madu</td><td>A</td></tr>
-          <tr><td>Jhonata</td><td>A / B</td></tr>
-          <tr><td>Laís</td><td>A</td></tr>
-          <tr><td>Senna</td><td>B</td></tr>
-          <tr><td>Maria</td><td>B</td></tr>
-          <tr><td>Alice</td><td>B / X</td></tr>
-          <tr><td>Wallesca</td><td>C / X</td></tr>
-          <tr><td>João</td><td>C / X</td></tr>
-          <tr><td>Lucas</td><td>C</td></tr>
-          <tr><td>Isabel</td><td>C</td></tr>
-        </tbody>
-      </table>
-    </div>
+  <div style="overflow-x:auto;">
+    <table style="width:100%; border-collapse: collapse; font-size: 15px;">
+      <thead>
+        <tr style="background:#f2f2f2;">
+          <th style="padding:8px; border:1px solid #ddd; text-align:left;">Nome</th>
+          <th style="padding:8px; border:1px solid #ddd; text-align:left;">Equipe</th>
+        </tr>
+      </thead>
+      <tbody id="tabela-cantores">
+        <tr><td colspan="2">Carregando cantores...</td></tr>
+      </tbody>
+    </table>
   </div>
+</div>
